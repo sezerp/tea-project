@@ -35,10 +35,16 @@ public class CsvToDevice extends ResourceLoader {
     }
 
     public ArrayList<Device> getDevicesList() {
-        ArrayList<String> devices = new ArrayList<>();
-        int i = 0;
-        for(CSVRecord r: this.getRecords()) {
+        ArrayList<Device> devices = new ArrayList<>();
+        Device device = new Device();
 
+        for(CSVRecord r: this.csvRecords) {
+
+            for(int i = 0; i < r.size(); i++) {
+                System.out.print(r.get(i) + " ");
+            }
+            System.out.println();
+            System.out.println("###########################################");
         }
         return null;
     }
