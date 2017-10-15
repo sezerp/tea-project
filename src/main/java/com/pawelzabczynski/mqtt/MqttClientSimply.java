@@ -11,7 +11,7 @@ import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
  * @since      24.09.2017
  * */
 
-public class MqttClientSimly {
+public class MqttClientSimply {
 
     private String brokerUrl                        = "";
     private String topic                            = "";
@@ -26,11 +26,11 @@ public class MqttClientSimly {
     private MqttConnectOptions mqttConnectOptions   = new MqttConnectOptions();
     private MqttClient mqttClient;
 
-    public MqttClientSimly(String brokerUrl, String topic, String clientId, MessageGenerator messageGen) {
+    public MqttClientSimply(String brokerUrl, String topic, String clientId, MessageGenerator messageGen) {
         this(brokerUrl, topic, clientId, messageGen, 0);
     }
 
-    public MqttClientSimly(String brokerUrl, String topic, String clientId, MessageGenerator messageGen, int qos) {
+    public MqttClientSimply(String brokerUrl, String topic, String clientId, MessageGenerator messageGen, int qos) {
         this.brokerUrl = brokerUrl;
         this.topic = topic;
         this.clientId = clientId;
