@@ -8,7 +8,12 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.util.ArrayList;
-
+/**
+ * Class provided storage device data as CSV file e.g. from DB export
+ * @author     Paweł Zabczyński
+ * @version    0.1
+ * @since      16.10.2017
+ * */
 public class CsvToDevice extends ResourceLoader {
 
     private Device device;
